@@ -1,0 +1,45 @@
+.not-found-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+.not-found {
+  margin: 0 20px;
+  text-align: center;
+}
+.not-found h1 {
+  font-size: 70px;
+  color: #e21717;
+}
+.not-found p {
+  font-size: 18px;
+}
+
+.not-found-btn-container button {
+  width: 200px;
+  border: 1px solid #12b0e8;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+.not-found-btn-container button:nth-child(1) {
+  background-color: #12b0e8;
+  color: #fff;
+}
+.not-found-btn-container button:nth-child(2) {
+  background-color: #fff;
+  color: #12b0e8;
+}
+.not-found-btn-container button:nth-child(1):hover {
+  background-color: #fff;
+  color: #12b0e8;
+}
+.not-found-btn-container button:nth-child(2):hover {
+  background-color: #12b0e8;
+  color: #fff;
+}
