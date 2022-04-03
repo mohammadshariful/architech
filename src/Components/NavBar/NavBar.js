@@ -5,6 +5,7 @@ import CustomLink from "../CustomLink/CustomLink";
 import "./NavBar.css";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
+
   return (
     <Navbar bg="dark" className=" navbar-dark w-100 sticky-top" expand="lg">
       <Container>

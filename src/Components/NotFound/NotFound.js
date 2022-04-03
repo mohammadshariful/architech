@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./NotFound.css";
 const NotFound = () => {
+  const navigate = useNavigate();
   return (
     <section className="not-found-container">
       <div className="not-found">
@@ -11,8 +13,10 @@ const NotFound = () => {
           is broken report a problem
         </p>
         <div className="not-found-btn-container d-flex justify-content-evenly align-items-center mt-3 flex-column flex-md-row">
-          <button>retun home</button>
-          <button>report problem</button>
+          <button type="button" onClick={() => navigate("/home")}>
+            retun home
+          </button>
+          <button type="button">report problem</button>
         </div>
       </div>
     </section>
