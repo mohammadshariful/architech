@@ -25,3 +25,18 @@
   color: #000;
   background-color: #2ecc70a6;
 }
+.showAll-btn {
+  border: 0;
+  padding: 10px 20px;
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #2ecc71;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: 0.3s linear;
+}
+.showAll-btn:hover {
+  color: #fff;
+  background-color: #2ecc71;
+}

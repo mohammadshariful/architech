@@ -41,11 +41,11 @@ const User = ({ user }) => {
     <Col md={4} className="my-3 user-cart">
       <Card className="h-100">
         <Card.Body className="body-container">
-          <Card.Img src={picture} className="cart-img d-block mx-auto" />
+          <Card.Img src={picture} className="card-img d-block mx-auto" />
           <h5 className="text-center">{name}</h5>
           <p>{description}</p>
-          <p className=" d-flex justify-content-center align-items-center">
-            Ratings :{ratingIcon} out of 5
+          <p className=" d-flex  align-items-center">
+            Ratings : {ratingIcon} out of 5
           </p>
         </Card.Body>
       </Card>

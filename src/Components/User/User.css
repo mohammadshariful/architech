@@ -7,8 +7,9 @@
 }
 .body-container p {
   margin: 0;
+  font-size: 17px;
 }
-.cart-img {
+.card-img {
   height: 60px;
   width: 60px;
   border: 5px solid #fff;
