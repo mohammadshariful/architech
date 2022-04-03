@@ -1,7 +1,8 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import headerBg from "../../Assets/Images/sunset-5344024_1280.jpg";
 import useUser from "../../CustomHooks/useUser";
+import User from "../User/User";
 import "./Home.css";
 const Home = () => {
   const [users] = useUser();
@@ -25,6 +26,11 @@ const Home = () => {
       </section>
       <section className="mt-5">
         <h2 className="text-center">Customer Reviews({sliceUsers.length})</h2>
+        <Row className="users justify-content-center">
+          {sliceUsers.map((user) => (
+            <User key={user._id} user={user} />
+          ))}
+        </Row>
       </section>
     </Container>
   );
