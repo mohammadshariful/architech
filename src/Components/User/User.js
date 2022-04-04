@@ -1,6 +1,12 @@
 import React from "react";
 import { Card, Col } from "react-bootstrap";
-import { FaStar, FaStarHalfAlt } from "react-icons/fa";
+import {
+  FaPenSquare,
+  FaStar,
+  FaStarHalfAlt,
+  FaThumbsDown,
+  FaThumbsUp,
+} from "react-icons/fa";
 import "./User.css";
 const User = ({ user }) => {
   const { description, name, picture, rating } = user;
@@ -23,7 +29,7 @@ const User = ({ user }) => {
         <FaStar className="full-star" />
         <FaStar className="full-star" />
         <FaStar className="full-star" />
-        <FaStarHalfAlt className="half-star" />
+        <FaStarHalfAlt className="full-star" />
       </small>
     );
   } else {
@@ -43,10 +49,23 @@ const User = ({ user }) => {
         <Card.Body className="body-container">
           <Card.Img src={picture} className="card-img d-block mx-auto" />
           <h5 className="text-center">{name}</h5>
-          <p>{description}</p>
+          <q>{description.slice(0, 150) + "..."}</q>
+          <small className="fw-bold">read more</small>
           <p className=" d-flex  align-items-center">
-            Ratings : {ratingIcon} out of 5
+            Ratings : {ratingIcon} ({rating}) out of 5
           </p>
+          <div className="d-flex align-items-center my-2">
+            <small>Is this review helpful?</small>
+            <div className="d-flex align-items-center justify-content-between">
+              <small className="ms-2">
+                <FaThumbsUp className="ms-2" />
+                <FaThumbsDown className="ms-2" />
+              </small>
+              <small className="ms-2">
+                <FaPenSquare /> Reply
+              </small>
+            </div>
+          </div>
         </Card.Body>
       </Card>
     </Col>

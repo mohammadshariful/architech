@@ -52,7 +52,7 @@ const Barchart = () => {
   return (
     <Col md={6}>
       <h3>Invesment vs Revenue</h3>
-      <BarChart width={400} height={250} data={data}>
+      <BarChart width={300} height={250} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="investment" />
         <YAxis dataKey="revenue" />

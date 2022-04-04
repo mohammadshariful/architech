@@ -2,8 +2,13 @@
   width: 350px;
   border: 0;
 }
+
 .body-container {
   background-color: #ececec;
+}
+.body-container:hover {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .body-container p {
   margin: 0;
@@ -16,9 +21,9 @@
   object-fit: cover;
   border-radius: 50%;
 }
-.full-star {
-  color: red;
+.card-img:hover {
+  border: 5px solid #2ecc71;
 }
-.half-star {
+.full-star {
   color: yellow;
 }

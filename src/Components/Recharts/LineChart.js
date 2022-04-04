@@ -2,7 +2,7 @@ import React from "react";
 import { Col } from "react-bootstrap";
 import { Legend, Line, LineChart, Tooltip, XAxis, YAxis } from "recharts";
 
-const LineChar = () => {
+const Linechart = () => {
   const data = [
     {
       month: "Mar",
@@ -55,4 +55,4 @@ const LineChar = () => {
   );
 };
 
-export default LineChar;
+export default Linechart;
