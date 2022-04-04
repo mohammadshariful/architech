@@ -1,6 +1,14 @@
 import React from "react";
 import { Col } from "react-bootstrap";
-import { Legend, Line, LineChart, Tooltip, XAxis, YAxis } from "recharts";
+import {
+  CartesianGrid,
+  Legend,
+  Line,
+  LineChart,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 const Linechart = () => {
   const data = [
@@ -45,6 +53,7 @@ const Linechart = () => {
     <Col md={6}>
       <h3>Month wise sell</h3>
       <LineChart width={300} height={250} data={data}>
+        <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="month" />
         <YAxis />
         <Legend />

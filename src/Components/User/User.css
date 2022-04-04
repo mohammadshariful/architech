@@ -21,9 +21,10 @@
   object-fit: cover;
   border-radius: 50%;
 }
-.card-img:hover {
+.body-container:hover .card-img {
   border: 5px solid #2ecc71;
 }
+
 .full-star {
   color: yellow;
 }
