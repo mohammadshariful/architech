@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 import CustomLink from "../CustomLink/CustomLink";
 import "./NavBar.css";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
-
+  const { key } = useLocation();
   return (
-    <Navbar bg="dark" className=" navbar-dark w-100 sticky-top" expand="lg">
+    <Navbar
+      bg="dark"
+      className={`navbar-dark w-100 sticky-top ${
+        key.includes("default") ? "d-none" : "null"
+      }`}
+      expand="lg"
+    >
       <Container>
         <Navbar.Brand to="/">
           <span className="brand">A</span>rchiTech

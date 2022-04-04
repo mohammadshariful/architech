@@ -7,6 +7,7 @@ import {
   FaThumbsDown,
   FaThumbsUp,
 } from "react-icons/fa";
+import indicator from "../../Assets/Images/indicator.svg";
 import "./User.css";
 const User = ({ user }) => {
   const { description, name, picture, rating } = user;
@@ -48,7 +49,10 @@ const User = ({ user }) => {
       <Card className="h-100">
         <Card.Body className="body-container">
           <Card.Img src={picture} className="card-img d-block mx-auto" />
-          <h5 className="text-center">{name}</h5>
+          <div className="d-flex justify-content-center align-items-center">
+            <img src={indicator} alt="" />
+            <h5 className="mt-2 ms-1">{name}</h5>
+          </div>
           <q>{description.slice(0, 150) + "..."}</q>
           <small className="fw-bold">read more</small>
           <p className=" d-flex  align-items-center">
